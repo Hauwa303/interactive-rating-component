@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    font-family: 'Overpass', sans-serif;
+
+  }
+
+  .container{
+    width: 800px;
+    height: 600px;
+    background-color:hsl(216, 12%, 8%) ;
+    position: relative;
+   margin:auto ;
+   margin-top: 30px;
+    
+    
+  }
+
+  .card{
+    width: 400px;
+    height: 400px;
+    background-color:  hsl(215, 24%, 14%);
+    border-radius: 15px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  .image{
+    background-color: hsl(212, 17%, 19%);
+    padding: 0.8rem;
+    border-radius: 50px;
+     margin: 20px;
+    
+  }
+  img{
+    margin-top: 50px;
+    padding-left:6rem ;
+  }
+  h1{
+    
+    color: white;
+    padding: 10px;
+    margin: 15px;
+  }
+  h2{
+    color: white;
+    display: flex;
+    justify-content:center;
+    
+  }
+
+  .selected{
+    background-color:hsl(214, 15%, 22%);
+    margin: auto;
+    font-size: 15px;
+    color:hsl(25, 97%, 53%);
+    padding: 0.5rem;
+    border-radius: 25px;
+    width: 30vh;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2em;
+    
+  }
+  .card-text{
+    padding: 2em;
+  }
+ .card-text p {
+    margin-top: 1px;
+    text-align: center;
+
+ }
+
+  p{
+    font-size:15px ;
+    color:hsl(217, 12%, 63%) ;
+    padding: 10px;
+    margin: 15px;
+    
+  }
+  .btn{
+    display: flex;
+    justify-content: space-around;
+   }
+ .btn-circle{
+  border-style: none;
+  border-radius:100% ;
+   padding: 1.5em;
+   color:hsl(217, 12%, 63%);
+    background-color:  hsl(212, 17%, 22%);
+    border-color: hsl(212, 17%, 19%);
+   
+    
+  }
+
+ .btn-submit{
+    background-color: hsl(25, 97%, 53%);
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    border-radius: 25px;
+    letter-spacing: 2px;
+    margin:25px ;
+    
+    
+    margin-left:2em ;
+
+  }
+
+  .btn-submit:hover{
+    color: black;
+    background-color:white;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+  .btn-circle:hover{
+    color: white;
+    background-color:orange ;
+    transition: ease-in-out 0.2s;
+    cursor: pointer; 
+   }
+
+
+  
+   .thank-you-state{
+     display:none;
+   }
+
+  @media screen and (max-width: 375px) {
+    
+    .container{
+        width: 100%;
+       
+    }
+
+    .card{
+
+        width: 90%;
+       
+    }
+
+    .btn-submit{
+         margin: 15px;
+    }
+
+  }
